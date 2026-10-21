@@ -984,3 +984,64 @@ body {
         min-width: 800px;
     }
 }
+/* ===== ONLINE BOOK STORE FOOTER ===== */
+
+.footer-body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #172554;
+    color: white;
+}
+
+.site-footer {
+    min-height: 100%;
+    padding: 12px 20px 0;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 10px 25px;
+    background: linear-gradient(135deg, #172554, #2563eb);
+}
+
+.footer-info h3,
+.footer-links h3 {
+    margin: 0 0 8px;
+    font-size: 15px;
+    color: #facc15;
+}
+
+.footer-info p,
+.footer-links p {
+    margin: 4px 0;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.footer-links a {
+    color: rgb(225, 211, 211);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #facc15;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    grid-column: 1 / -1;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 7px 0;
+    font-size: 11px;
+}
+
+@media (max-width: 500px) {
+    .site-footer {
+        grid-template-columns: 1fr;
+        padding: 12px;
+    }
+
+    .footer-bottom {
+        grid-column: 1;
+    }
+}

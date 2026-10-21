@@ -9,6 +9,38 @@
 
     <link rel="stylesheet" href="style.css">
 
+
+    <style>
+        .department-footer {
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            gap: 8px 14px;
+            padding: 16px 12px;
+            margin-top: 24px;
+            background: linear-gradient(90deg, #172554, #2563eb);
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            border-radius: 10px;
+        }
+        .department-footer span { white-space: nowrap; }
+        .department-footer a {
+            color: #facc15;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .department-footer a:hover { text-decoration: underline; }
+        @media (max-width: 700px) {
+            .department-footer { justify-content: flex-start; }
+            .department-footer span { white-space: normal; }
+        }
+    </style>
+
 </head>
 
 <body class="catalogue-body">
@@ -265,8 +297,6 @@
 
     </div>
 
-</section>
-
 
 <!-- ================= ECE ================= -->
 
@@ -482,10 +512,6 @@
         </div>
 
     </div>
-
-</section>
-
-
 <!-- ================= MECHANICAL ================= -->
 
 <section
@@ -700,10 +726,6 @@
         </div>
 
     </div>
-
-</section>
-
-
 <!-- ================= IT ================= -->
 
 <section
@@ -919,9 +941,6 @@
 
     </div>
 
-</section>
-
-
 <div class="catalogue-cart-link">
 
     <a href="cart.html">
@@ -981,6 +1000,20 @@ function addToCart(name, author, price)
 }
 
 </script>
+<!-- FOOTER FOR THIS DEPARTMENT -->
+    <footer class="department-footer">
+        <span>👤 Name: YOUR NAME</span>
+        <span>🎓 Roll No.: YOUR ROLL NUMBER</span>
+        <span>🏫 GL Bajaj College</span>
+        <span>📚 GL Bajaj Online Book Store</span>
+        <span>📱 YOUR MOBILE NUMBER</span>
+        <span>
+            <a href="https://github.com/YOUR-USERNAME/YOUR-REPOSITORY"
+               target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+        </span>
+    </footer>
+
+</section>
 
 
 </body>
